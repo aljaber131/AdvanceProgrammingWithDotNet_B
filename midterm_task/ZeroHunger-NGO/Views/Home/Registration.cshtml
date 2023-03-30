@@ -1,0 +1,24 @@
+﻿@model ZeroHunger_NGO.DB.Restaurant
+@{
+    ViewBag.Title = "Registration";
+}
+
+<div class="container-fluid">
+    <h2 class="text-center">Restaurant Registration</h2>
+    
+    <form method="post" action="~/Restaurant/ResCreate">
+        <label>Restaurant Name <span class="text text-danger">*</span></label> <br />
+        <input type="text" name="Resname" required /> <br />
+
+        <label>Location <span class="text text-danger">*</span></label> <br />
+        <input type="text" name="Location" required /> <br />
+
+        <label>Email <span class="text text-danger">*</span></label> <br />
+        <input type="email" name="Email" required /> <br />
+
+        <label>Password <span class="text text-danger">*</span></label> <br />
+        <input type="password" name="Password" required /><br />
+
+        <input type="submit" class="btn btn-sm btn-primary " value="Sign up" />
+    </form>
+</div>
